@@ -6,5 +6,5 @@ urlpatterns = [
     path("about", about),
     path("hello/<str:username>", hello),
     path("projects", projects),
-    path('tasks/', tasks)
+    path("tasks/", tasks),
 ]
