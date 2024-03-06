@@ -40,7 +40,7 @@ def create_task(request):
             description=request.POST["description"],
             project_id=1,
         )
-        return redirect("/tasks/")
+        return redirect("tasks")
 
 
 def create_project(request):
@@ -50,4 +50,4 @@ def create_project(request):
         )
     else:
         Project.objects.create(name=request.POST["name"])
-        return redirect("/projects")
+        return redirect("projects")
